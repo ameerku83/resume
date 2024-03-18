@@ -1,7 +1,24 @@
-.navbar-nav li a:hover{
-    text-decoration: underline blue;
-    font-size: 20px;
+body{background-color: rgb(159, 188, 242);
+
+margin-top: 8px;}
+
+
+
+
+.navbar-nav li button {
+    
+    margin: 0 0;
+    padding: 0 0;
+     font-weight: bold;
+    font-size: 15px;
+    border-radius: 16px;
+    border: 0;
 }
+.navbar-nav li button:hover{
+font-size: 18;
+border: 3px solid rgb(43, 255, 0);
+}
+
 footer i:hover{
     background-color: white;
 }
@@ -15,10 +32,16 @@ footer i:hover{
         display: block;
         flex-direction: column;
         padding-left: 200px;
-
-        
-        
-    
     }
-    
+}
+
+
+#summery{
+    margin: 130px;
+}
+
+.navbar{
+   
+    margin-top: 25px;
+    bottom: 20px;
 }
