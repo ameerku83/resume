@@ -19,7 +19,7 @@
            return false
        }
        if(password.length<8){
-           message.innerText="must be greater than 8...!"
+           message.innerText="password must be greater than 8...!"
            message.style.display="block"
            return false
        }
