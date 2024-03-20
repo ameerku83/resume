@@ -1,4 +1,9 @@
-body{background-color: rgb(159, 188, 242);
+*{margin: 0;
+padding: 0;}
+
+
+
+body{ 
 
 margin-top: 8px;}
 
@@ -17,10 +22,41 @@ margin-top: 8px;}
 .navbar-nav li button:hover{
 font-size: 18;
 border: 3px solid rgb(43, 255, 0);
+transition: .2s all ease-in-out;
 }
 
-footer i:hover{
-    background-color: white;
+
+    
+    
+   
+
+
+.fa-instagram:hover{
+   
+    width: 30px;
+    height: 32px;
+    border-radius: 7px;
+   background:linear-gradient(45deg,orange,rgb(255, 119, 0),rgb(234, 0, 255),rgb(114, 39, 220));
+  
+}
+.fa-telegram:hover {
+    width: 30px;
+    height: 32px;
+    border-radius: 7px;
+   background-color:  rgb(9, 98, 239);
+}
+.fa-github:hover{
+    width: 30px;
+    height: 32px;
+    border-radius: 7px;
+   background-color:  rgb(32, 52, 84);
+}
+
+.fa-envelope:hover{
+    width: 35px;
+    height: 32px;
+    border-radius: 7px;
+   background-color: rgb(9, 98, 239) ;
 }
 
 @media screen and (max-width:600px) {
@@ -35,6 +71,20 @@ footer i:hover{
         flex-direction: row;
         
     }
+    .content-3{
+        margin: 0 0;
+        display: block;
+        flex-direction: column;
+
+    }
+    .formblock{
+        margin: 0 0;
+        display: block;
+        flex-direction: column;
+    }
+    .btn-primary{
+        margin: 0;
+    }
 }
 
 
@@ -46,4 +96,12 @@ footer i:hover{
    
     margin-top: 30px;
     bottom: 30px;
+}
+
+
+input{
+    width: 550px;
+   height: 35px;
+    border-radius:10px ;
+    
 }

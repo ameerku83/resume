@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   </head>
+  <style>
+    span{color: red;}
+  </style>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg mb-5 pb-5">
         <div class="container-fluid position-fixed my-4 mt-5 bg-primary">
-          <a class="navbar-brand mt-2 text-white" href="#"><h2 >HAMEER KU</h2></a>
+          <h1 class="mt-2 text-white" >HAMEER KU</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,6 +34,12 @@
               <li class="nav-item ">
                <button> <a class="nav-link active" href="#skill">SKILL</a></button>
               </li>
+              <li class="nav-item ">
+                <button> <a class="nav-link active" href="#project">Latest projects</a></button>
+               </li>
+              <li class="nav-item ms-5 ">
+                <button> <a class="nav-link active " href="#sign-in">Sign in</a></button>
+               </li>
             </ul>
            
           </div>
@@ -85,44 +94,66 @@
          </div>
        </div>
 
-       <div class="row text-center ">
-         <h1 style="text-decoration: underline blue;">Latest projects</h1>
+       <div class="row text-center  content-3">
+         <h1 id="project" style="text-decoration: underline blue; padding-top: 50px;">Latest projects</h1>
         <div class="col-6"><a href="https://ameerku83.github.io/mi-a36/"><iframe  style=" border-radius: 20px ; border: 2px solid black;" src="https://ameerku83.github.io/mi-a36/" ></iframe></a><br><button style="border-radius: 15px;"><a  style="text-decoration: none; color: black;" href="https://ameerku83.github.io/mi-a36/">click here </a></button></div>
         <div class="col-6"><a href="https://ameerku83.github.io/news/"> <iframe style=" border-radius: 20px ; border: 2px solid black;"  src="https://ameerku83.github.io/news/" frameborder="0"></iframe></a> <br> <button style="border-radius: 15px;"><a style="text-decoration: none; color: black;" href="https://ameerku83.github.io/news/"> click here</a></button></div>
         
        </div>
     </div>
      
-
-    <form class="container mt-5">
-       <h1 align="center">sign in</h1>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+     <h1 align="center">Sign in</h1>
+       
+     <form  onsubmit="return handleSubmit()"   class="m-5 ">
+      <div  id="message"  class="alert alert-danger"  style="display: none;"></div>
+      <div class="row  formblock">
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="name">full name</label>
+            <input type="text" class="form-control" id="name"  placeholder="enter your name" >
+          </div>
+        <div class="mb-3">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email"  placeholder="enter your email">
+          
+        </div>
+        <div class="mb-3">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="enter your password">
+        </div>
+        </div>
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="name">Phone Number</label>
+            <input type="number" class="form-control" id="Phone"  placeholder="enter your mobile no" >
+          </div>
+          <div class="mb-3">
+            <label for="name">Address</label><br>
+           <textarea name="address" id="address" cols="73" rows="5" placeholder="enter your address"></textarea>
+          </div>
+         
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button  type="submit" class="btn btn-primary" style="margin-left: 525px;">Submit</button>
     </form>
-
-
     
     
    
     
-    <footer class="bg-black mt-3 py-4 text-center">
+    <footer class=" bg-black py-4 text-center mt-3">
       <span style="color: white;"> © 2024, Bold Limited. All rights reserved  </span> 
-      <i class="bi bi-instagram h2 ms-5" style="color: grey; "></i>
-       <i class="bi bi-telegram h2 ms-5"  style="color: gray;"></i>
+     
+      <div>
+        <a href="#"><i class="fa-brands fa-instagram h3 text-white "  ></i></a> 
+      <a href="#"> <i class="fa-brands fa-telegram h3 text-white ms-2"></i></a>
+      <a href="https://github.com/ameerku83"><i class="fa-brands fa-github h3 text-white ms-2"></i></a>
+      </div>
     </footer>
     
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+ 
+  
   </body>
 </html>          
