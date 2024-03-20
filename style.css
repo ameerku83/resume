@@ -1,10 +1,12 @@
-*{margin: 0;
+
+
+*{
 padding: 0;}
 
 
 
 body{ 
-
+position: relative;
 margin-top: 8px;}
 
 
@@ -12,8 +14,7 @@ margin-top: 8px;}
 
 .navbar-nav li button {
     
-    margin: 0 0;
-    padding: 0 0;
+    
      font-weight: bold;
     font-size: 15px;
     border-radius: 16px;
@@ -58,38 +59,86 @@ transition: .2s all ease-in-out;
     border-radius: 7px;
    background-color: rgb(9, 98, 239) ;
 }
+@media screen and(max-width:576px) {
+    
+    
+}
 
 @media screen and (max-width:600px) {
     #content-1{
-        margin: 0 0;
+        text-align: center;
         display: block;
         flex-direction: column;
     }
     .content-2{
-        padding-right: 0 ;
+        
         display: block;
         flex-direction: row;
-        
+        text-align: center;
     }
     .content-3{
-        margin: 0 0;
+        text-align: center;
         display: block;
         flex-direction: column;
 
     }
     .formblock{
-        margin: 0 0;
+        
         display: block;
         flex-direction: column;
     }
     .btn-primary{
         margin: 0;
     }
+    #address{
+        width: 270px;
+    }
+    .project{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left:50px ;
+        margin-right: 10px;
+    }
+    .form{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left:40px ;
+        margin-right: 10px;
+       
+    }
+    .form input{
+        width: auto;
+    }
+ .content-1 {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    
+ }
+ .btn-primary{
+    margin-left: 67px;
+ }
+ .navbar-nav {
+    padding-top: 50px;
+    text-align: right;
+  
+ }
+   
 }
 
 
 #summery{
-    margin: 130px;
+    margin: 0 130px;
+    margin-top: 50px;
 }
 
 .navbar{
