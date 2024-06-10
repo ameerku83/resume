@@ -40,11 +40,12 @@ transition: .2s all ease-in-out;
    background:linear-gradient(45deg,orange,rgb(255, 119, 0),rgb(234, 0, 255),rgb(114, 39, 220));
   
 }
-.fa-telegram:hover {
+.fa-linkedin:hover {
     width: 30px;
     height: 32px;
     border-radius: 7px;
-   background-color:  rgb(9, 98, 239);
+   background-color:  rgb(2, 99, 255);
+   
 }
 .fa-github:hover{
     width: 30px;
@@ -153,7 +154,4 @@ input{
    height: 35px;
     border-radius:10px ;
     
-}
-input:hover{
-    background-color: 2px green;
 }

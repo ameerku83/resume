@@ -1,5 +1,8 @@
     
 
+
+
+
     function handleSubmit(){
       const message=document.getElementById("message")
       const name = document.getElementById("name").value
@@ -19,9 +22,9 @@
            message.style.display="block"
            return false
        }else{
-
+    
          namecorect.innerText="(1/5)...!"
-           
+         
            
        }
        if( /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/.test(email)==false){
@@ -34,7 +37,7 @@
            
            
        }
-       if(password.length<6){
+       if(password<6){
            message.innerText="password must be greater than 6...!"
            message.style.display="block"
            return false
@@ -52,7 +55,7 @@
      }else{
       phonCcorrect.style.color="green"
       phonCcorrect.innerText="(4/5)...!"
-        
+      
         
     }
      if(address.length<10){
@@ -66,8 +69,6 @@
      
  }
 
-
-       
                alert("successfully submitted")
                return true
            }
