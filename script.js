@@ -17,58 +17,63 @@
       const addressCorect=document.getElementById("addresscorect")
         namecorect.style.color="green"
        message.style.display="none"
-       if(name.length==0){
+       if(name.length<2){
            message.innerText="please enter name...!"
            message.style.display="block"
+            namecorect.innerText=" "
            return false
        }else{
     
-         namecorect.innerText="(1/5)...!"
+         namecorect.innerText=" ✓..!"
          
            
        }
        if( /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/.test(email)==false){
            message.innerText="entera valid email. use small letters..!"
            message.style.display="block"
+           emailCorect.innerText=""
            return false
        }else{
          emailCorect.style.color="green"
-         emailCorect.innerText="(2/5)...!"
+         emailCorect.innerText="✓..!"
            
            
        }
-       if(password<6){
-           message.innerText="password must be greater than 6...!"
+       if(!/^(?=.*[a-z])(?=.*[A-Z]).{6,15}$/.test(password)){
+           message.innerText="password must be greater than 5 one uppercase...!"
            message.style.display="block"
+           passwordCorrect.innerText=""
            return false
        }else{
          passwordCorrect.style.color="green"
-         passwordCorrect.innerText="(3/5)...!"
+         passwordCorrect.innerText="✓..!"
            
            
        }
 
-       if(Phone.length==0){
+       if(Phone.length<7){
          message.innerText="enter your phone number...!"
          message.style.display="block"
+          phonCcorrect.innerText=""
          return false
      }else{
       phonCcorrect.style.color="green"
-      phonCcorrect.innerText="(4/5)...!"
+      phonCcorrect.innerText="✓..!"
       
         
     }
      if(address.length<10){
       message.innerText="enter at least 10 character...!"
       message.style.display="block"
+      addressCorect.innerText=""
       return false
   }else{
    addressCorect.style.color="green"
-   addressCorect.innerText="(5/5) completed...!"
+   addressCorect.innerText="✓..!"
      
      
  }
 
-               alert("successfully submitted")
+               alert("successfully saved")
                return true
            }
