@@ -73,7 +73,7 @@
      
      
  }
-name=""
+
                alert("successfully saved")
                return false
            }
