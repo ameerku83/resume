@@ -75,5 +75,5 @@
  }
 
                alert("successfully saved")
-               return false
+               return true
            }
