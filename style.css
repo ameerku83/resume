@@ -1,157 +1,32 @@
 
 
 *{
-padding: 0;}
-
-
-
-body{ 
-position: relative;
-margin-top: 8px;}
-
-
-
-
-.navbar-nav li button {
-    
-    
-     font-weight: bold;
-    font-size: 15px;
-    border-radius: 16px;
-    border: 0;
-}
-.navbar-nav li button:hover{
-font-size: 18;
-border: 3px solid rgb(43, 255, 0);
-transition: .2s all ease-in-out;
+padding: 0;
+margin: 0;
 }
 
 
-    
     
    
 
 
 .fa-instagram:hover{
    
-    width: 30px;
-    height: 32px;
+   
     border-radius: 7px;
    background:linear-gradient(45deg,orange,rgb(255, 119, 0),rgb(234, 0, 255),rgb(114, 39, 220));
   
 }
 .fa-linkedin:hover {
-    width: 30px;
-    height: 32px;
+   
     border-radius: 7px;
    background-color:  rgb(2, 99, 255);
    
 }
 .fa-github:hover{
-    width: 30px;
-    height: 32px;
+    
     border-radius: 7px;
    background-color:  rgb(32, 52, 84);
 }
 
-.fa-envelope:hover{
-    width: 35px;
-    height: 32px;
-    border-radius: 7px;
-   background-color: rgb(9, 98, 239) ;
-}
-@media screen and(max-width:576px) {
-    
-    
-}
 
-@media screen and (max-width:600px) {
-    #content-1{
-        text-align: center;
-        display: block;
-        flex-direction: column;
-    }
-    .content-2{
-        
-        display: block;
-        flex-direction: row;
-        text-align: center;
-    }
-    .content-3{
-        text-align: center;
-        display: block;
-        flex-direction: column;
-
-    }
-    .formblock{
-        
-        display: block;
-        flex-direction: column;
-    }
-    .btn-primary{
-        margin: 0;
-    }
-    #address{
-        width: 270px;
-    }
-    .project{
-        display: block;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-left:50px ;
-        margin-right: 10px;
-    }
-    .form{
-        display: block;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-left:40px ;
-        margin-right: 10px;
-       
-    }
-    .form input{
-        width: auto;
-    }
- .content-1 {
-    display: block;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px;
-    
- }
- .btn-primary{
-    margin-left: 67px;
- }
- .navbar-nav {
-    padding-top: 50px;
-    text-align: right;
-  
- }
-   
-}
-
-
-#summery{
-    margin: 0 130px;
-    margin-top: 50px;
-}
-
-.navbar{
-   
-    margin-top: 30px;
-    bottom: 30px;
-}
-
-
-input{
-    width: 550px;
-   height: 35px;
-    border-radius:10px ;
-    
-}
