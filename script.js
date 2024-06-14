@@ -63,7 +63,7 @@
         
     }
      if(address.length<10){
-      message.innerText="enter at least 10 character...!"
+      message.innerText="enter message ,at least 10 character...!"
       message.style.display="block"
       addressCorect.innerText=""
       return false
