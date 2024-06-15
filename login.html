@@ -11,13 +11,37 @@
 <body>
   
 
+    <form  onsubmit=" return handleLogin()"    class="m-5  " action="./resume.html " id="loginForm">
+        
+        <div class="row  justify-content-center">
+          <h2 class=" my-4 text-center">Login</h2>
+          <div class="col-lg-6  p-3 shadow" style="border-radius: 15px;">
+            <div  id="logMessage"  class="alert alert-danger"  style="display: none;"></div>
+            <div class="mb-3">
+              <label for="email">Email </label>
+              
+              <input type="email" class="form-control" id="logEmail"  placeholder="enter your name" >
+              
+            </div>
+         
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="logPassword" placeholder="enter your password">
+            
+          </div>
+          <button  type="submit" class="btn btn-primary text-center">Login</button> <p class=" text-center">New?<a href="./index.html">Signin</a> </p>
+           
+          </div>
+          
+        </div>
+        
+      </form>
+      <!-- <form  onsubmit="return handleSubmit()" style="display: none;" id="signupForm" action="./index.html" >
     
-      <form  onsubmit="return handleSubmit()"  id="signupForm" action="./login.html" >
-    
-        <div class="row justify-content-center mx-3">
+        <div class="row  shadow    justify-content-center">
           <h2 class=" my-4 text-center">Signup</h2>
           
-          <div class="col-lg-6 bg-light shadow p-3" style="border-radius: 15px;" >
+          <div class="col-lg-6 bg-warning p-3" style="border-radius: 15px;" >
             <div  id="message"  class="alert alert-danger" style="display: none;" ></div>
              <div class="mb-3">
               <label for="name">Full Name</label>
@@ -32,16 +56,10 @@
           </div>
           <div class="mb-3">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="enter your password">
+            <input type="password" class="form-control" id="password" placeholder="enter your password"> show <input type="checkbox" name="" id="">
             <span id="passwordcorrect"></span>
           </div>
-           <input type="checkbox" onclick="viewPassword()" name="" id=""><span class="ms-1" style="font-size: 13px; font-weight: bold;">view password</span>
-          <div class="mb-3 mt-2">
-            <label for="password"> Conform Password</label>
-            <input type="password" class="form-control" id="Cpassword" placeholder="Conform your password"> 
-            <span id="cpasswordcorrect"></span>
-          </div>
-          <button  type="submit" class="btn btn-primary" >  Sign up</button>
+          <button  type="submit" class="btn btn-primary"> Send</button> <p class=" text-center"> Have an account<a href="#" onclick="viewLogin()"  >Login</a> </p>
 
           </div>
           
@@ -49,7 +67,7 @@
           
         </div>
        
-      </form>
+      </form> -->
       
       <script src="./script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
