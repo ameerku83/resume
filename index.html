@@ -22,23 +22,23 @@
              <div class="mb-3">
               <label for="name">Full Name</label>
               
-              <input type="text" class="form-control" id="name"  placeholder="enter your name" >
+              <input type="text" class="form-control" id="name"  placeholder="enter your name" required >
               <span id="namecorect" ></span>
             </div>
           <div class="mb-3">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email"  placeholder="example@gmail.com">
+            <input type="email" class="form-control" id="email"  placeholder="example@gmail.com" required>
             <span id="emailcorect"></span>
           </div>
           <div class="mb-3">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="enter your password">
+            <input type="password" class="form-control" id="password" placeholder="enter your password" required>
             <span id="passwordcorrect"></span>
           </div>
            <input type="checkbox" onclick="viewPassword()" name="" id=""><span class="ms-1" style="font-size: 13px; font-weight: bold;">view password</span>
           <div class="mb-3 mt-2">
             <label for="password"> Conform Password</label>
-            <input type="password" class="form-control" id="Cpassword" placeholder="Conform your password"> 
+            <input type="password" class="form-control" id="Cpassword" placeholder="Conform your password" required> 
             <span id="cpasswordcorrect"></span>
           </div>
           <button  type="submit" class="btn btn-primary" >  Sign up</button>
